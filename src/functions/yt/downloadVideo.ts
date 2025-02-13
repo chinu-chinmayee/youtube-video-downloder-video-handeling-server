@@ -179,6 +179,7 @@ export default async function DownloadVideo(
   try {
     // return false;
     const info = await ytdl.getInfo(link,{agent});
+    console.log("Info Collected")
     const formats = info.formats;
 
 
